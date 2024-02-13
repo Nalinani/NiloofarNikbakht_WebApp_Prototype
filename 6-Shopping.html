@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>  Niloofar's Project </title>
+        <link rel="stylesheet" type="text/css" href="./Css/Styles.css">
+        <script src="./js/4-Shopping.js"></script>
+        <link rel="Icon" type="img" href="./media/head.png">
+    </head>
+
+    <body>
+        <header>
+            <div id="hcontainer">
+                <a href="./3-Welcome.html" id="logo">
+                    <img src="./media/head.png" alt="Logo">
+                </a>
+
+            <nav>
+                <ul>
+                    <li><a href="./3-Welcome.html"> Welcome</a></li>
+                    <li><a href="./4-PhoneCase.html"> Phone Case  </a> </li>
+                    <li><a href="./5-AirPodCase.html">  Airpod Case</a></li>
+                    <li><a class="current" href="#"> Shopping </a></li>
+                    <li><a href="./7-Checkout.html"> Checkout  </a></li>
+                    <li><a href="./1-Login.html"> Logout </a> </li>
+                </ul>
+           
+            </nav>
+        </div>
+
+        </header>
+
+    
+        <div id="all-products-gallery">
+            <!-- *** Phone cases ***-->
+            <div id="phonecase-gallery" class="product-gallery">
+                <img src="./media/Phonecase/1.jpg" alt="Product" class="gallery-image" data-details="Details about Product">
+                <img src="./media/Phonecase/2.jpg" alt="Product" class="gallery-image" data-details="Details about Product">
+                <img src="./media/Phonecase/3.jpg" alt="Product" class="gallery-image" data-details="Details about Product">
+                <img src="./media/Phonecase/4.jpg" alt="Product" class="gallery-image" data-details="Details about Product">
+                <img src="./media/Phonecase/5.jpg" alt="Product" class="gallery-image" data-details="Details about Product">
+                <img src="./media/Phonecase/6.jpg" alt="Product" class="gallery-image" data-details="Details about Product">
+            </div>
+
+
+            <!-- *** Airpod cases ***-->
+            <div id="airpodcase-gallery" class="product-gallery">
+                   <img src="./media/AirpodCase/7.jpg" alt="Product" class="gallery-image" data-details="Details about Product">
+            <img src="./media/AirpodCase/8.jpg" alt="Product" class="gallery-image" data-details="Details about Product">
+            <img src="./media/AirpodCase/9.jpg" alt="Product" class="gallery-image" data-details="Details about Product">
+            <img src="./media/AirpodCase/10.jpg" alt="Product" class="gallery-image" data-details="Details about Product">
+            </div>
+        </div>
+    
+        <!-- Modal for product details -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img id="modal-image" alt="Product Image">
+                <div id="product-info">
+                    <h2 id="product-name"></h2>
+                    <p id="product-details"></p>
+                    <p id="product-price"></p>
+
+                    <!--  phone models, this is only for phone cases | airpods doesn't have it -->
+
+                    <div id="phone-model-select" style="display: none;">
+                        <p>Model:</p>
+                        <select id="phone-model">
+                            <option value="iphone7">iPhone 7</option>
+                            <option value="iphone11">iPhone 11</option>
+                            <option value="iphoneX">iPhone X</option>
+                            <option value="iphone12pro">iPhone 12 Pro</option>
+                            <option value="googlepixel6">Google Pixel 6</option>
+                            <option value="googlepixel7">Google Pixel 7</option>
+                            <option value="googlepixel8pro">Google Pixel 8 pro</option>
+                        </select>
+                    </div>
+
+
+                    <!-- Cart button -->
+                    <button class="cart-btn"> Add to Cart  </button>
+
+                </div>
+            </div>
+        </div>
+    
+        <!-- Go to Top Button -->
+        <button id="goTop" onclick="goToTop()">Go to the Top</button>
+
+    
+        <footer>
+            <!-- Social Medias' Icons and links -->
+            <!-- ----------------------------- -->
+            <!-- Facebook -->
+            <a href="https://www.facebook.com" target="_blank" title="facebook">
+                <img src="./media/SocialMedia/facebook.png" alt="Facebook">
+            </a>
+            <!-- Instagram -->
+            <a href="https://www.instagram.com" target="_blank" title="instagram">
+                <img src="./media/SocialMedia/instagram.png" alt="Instagram">
+            </a>
+            <!-- Twitter -->
+            <a href="https://www.twitter.com" target="_blank" title="twitter">
+                <img src="./media/SocialMedia/twitter.png" alt="Twitter">
+            </a>
+            <!-- Skype -->
+            <a href=" https://www.pinterest.com/" target="_blank" title="pinterest">
+                <img src="./media/SocialMedia/pinterest.png" alt="Pinterest">
+            </a>
+            <p>
+                Niloofar Nikbakht &copy; Fall 2023. All rights reserved
+                
+            </p>
+        </footer>
+            
+    </body>
+
+
+</html>

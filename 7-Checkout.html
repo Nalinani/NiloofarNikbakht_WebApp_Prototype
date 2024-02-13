@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>  Niloofar's Project </title>
+        <link rel="stylesheet" type="text/css" href="./Css/Styles.css">
+        <script src="./js/5-Checkout.js"></script>
+        <link rel="Icon" type="img" href="./media/head.png">
+    </head>
+
+    <body>
+        <header>
+            <div id="hcontainer">
+                <a href="./3-Welcome.html" id="logo">
+                    <img src="./media/head.png" alt="Logo">
+                </a>
+
+            <nav>
+                <ul>
+                    <li><a href="./3-Welcome.html"> Welcome </a></li>
+                    <li><a href="./4-PhoneCase.html"> Phone Case  </a> </li>
+                    <li><a href="./5-AirPodCase.html">  Airpod Case</a></li>
+                    <li><a href="./6-Shopping.html"> Shopping </a></li>
+                    <li><a class="current" href="#"> Checkout </a></li>
+                    <li><a href="./1-Login.html"> Logout </a> </li>
+                </ul>
+           
+            </nav>
+        </div>
+
+        </header>
+        <div class="container">
+            <h2 id="title-cart"> Cart Items:</h2>
+            <div id="cart-items"> 
+                
+
+            </div>
+
+            <div id="total-price">
+
+            </div>
+
+            <div id="payment">
+                <form id="checkoutform">
+
+                    <div id="card-information">
+
+                        <label>*Card Number</label>
+                        <input type="text" id="card-number" name="card-number" required>
+                        <p class="input-message" id="card-number-error"></p>
+
+                        <label>*CVC</label>
+                        <input type="text" id="card-cvc" name="card-cvc" required>
+                        <p class="input-message" id="card-cvc-error"></p>
+
+
+                        <label>*Name on the Card</label>
+                        <input type="text" id="card-name" name="card-name" required>
+                        <p class="input-message" id="card-name-error"></p>
+
+                        <label>*Expiration (MM/YY)</label>
+                        <input type="text" id="card-expiry" name="card-expiry" required>
+                        <p class="input-message" id="card-expiration-error"></p>
+
+
+                    </div>
+
+                    <div id="shipping-information">
+
+                        <label for="shipping-name">*Name</label>
+                        <input type="text" id="shipping-name" name="shipping-name" required>
+                        <p class="input-message" id="shipping-name-error"></p>
+
+
+                        <label for="shipping-address">*Address</label>
+                        <input type="text" id="shipping-address" name="shipping-address" required>
+                        <p class="input-message" id="shipping-address-error"></p>
+
+
+                        <label for="shipping-address2">Address Line 2</label>
+                        <input type="text" id="shipping-address2" name="shipping-address2">
+                        <P> </P>
+
+
+                        <label for="shipping-city">*City</label>
+                        <input type="text" id="shipping-city" name="shipping-city" required>
+                        <p class="input-message" id="shipping-city-error"></p>
+
+
+                        <label for="shipping-postal-code">*Postal Code</label>
+                        <input type="text" id="shipping-postal-code" name="shipping-postal-code" required>
+                        <p class="input-message" id="shipping-postal-code-error"></p>
+
+
+                        <label for="shipping-province">*Province</label>
+                        <input type="text" id="shipping-province" name="shipping-province" required>
+                        <p class="input-message" id="shipping-province-error"></p>
+
+
+                        <label for="shipping-country">*Country</label>
+                        <input type="text" id="shipping-country" name="shipping-country">
+                        <p class="input-message" id="shipping-country-error"></p>
+
+                    </div>
+                        
+                    
+                    <input type="submit" value="Submit" id="submit-form">
+                    <input type="reset" value="Clear "  id="clear-form">
+
+
+                </form>
+        
+            </div>
+        </div>
+        
+                
+        
+        <footer>
+            <!-- Social Medias' Icons and links -->
+            <!-- ----------------------------- -->
+            <!-- Facebook -->
+            <a href="https://www.facebook.com" target="_blank" title="facebook">
+                <img src="./media/SocialMedia/facebook.png" alt="Facebook">
+            </a>
+            <!-- Instagram -->
+            <a href="https://www.instagram.com" target="_blank" title="instagram">
+                <img src="./media/SocialMedia/instagram.png" alt="Instagram">
+            </a>
+            <!-- Twitter -->
+            <a href="https://www.twitter.com" target="_blank" title="twitter">
+                <img src="./media/SocialMedia/twitter.png" alt="Twitter">
+            </a>
+            <!-- Skype -->
+            <a href=" https://www.pinterest.com/" target="_blank" title="pinterest">
+                <img src="./media/SocialMedia/pinterest.png" alt="Pinterest">
+            </a>
+            <p>
+                Niloofar Nikbakht &copy; Fall 2023. All rights reserved
+                
+            </p>
+        </footer>
+            
+    </body>
+
+
+</html>

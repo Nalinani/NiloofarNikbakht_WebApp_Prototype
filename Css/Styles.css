@@ -1,0 +1,688 @@
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    background-color: #ccc;
+    padding: 0;
+    margin: 0;
+}
+
+/* ----Header------------------------------------------------ */
+
+header{
+  background-color: rgb(149, 79, 219) ;
+  min-height: 70px;
+  border-bottom: 4px outset rgb(220, 0, 249);
+
+}
+  
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.hcontainer{
+
+	width: 100%;
+	margin: 0 auto;
+    margin-top: 100px;
+}
+
+#logo{
+    display: inline-block; 
+    margin-left: 10px; 
+    margin-top: 5px;
+
+}
+
+#logo img{
+    padding-top: 4px;
+    height: 50px; 
+    width: auto;
+
+}
+
+#logo:active{
+    box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.186);
+    border-radius: 25px; 
+
+}
+
+
+/* ----Nav--------------------------------------------------- */
+nav{
+    float: right;
+    margin-right: 20px;
+
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+nav li{
+    display: inline-block;
+    margin-left: 30px;
+    padding-top: 23px;
+    position: relative;
+}
+  
+nav a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+}
+  
+nav a:hover{
+    /* TEXT COLOR CHANGE FOR HOVER */
+    color: rgb(255, 175, 248);
+}
+  
+nav a::before{
+    content: '';
+    display: block;
+    height: 3px;
+    background-color:rgb(106, 0, 212) ;
+    position: absolute;
+    top: 0%;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+  
+nav a:hover::before {
+    width: 100%;
+}
+
+.current{
+
+    color: rgb(242, 172, 255);
+}
+/* ----Slider------------------------------------------------ */
+.slider {
+    position: relative;
+    max-width: 550px; 
+    /* height of photos for making them all the same: */
+    height: 550px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 300px;
+   /* overflow: hidden;  */
+}
+
+.slide {
+    /* Hide slides by default */
+    display: none;
+     /* Position slides on top of each other */
+    position: absolute;
+    width: 100%;
+    /*Thetransition for the fade effect */
+    transition: opacity 0.5s ease; 
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+    border-radius: 13px ;
+}
+
+/* for the comments i wrote for each image in the slider */
+.text-overlay {
+    position: absolute;
+    bottom: 20px; 
+    left: 20px; 
+    color: white;
+    font-size: 20px;
+    background-color: rgb(93, 81, 106);
+    padding: 10px;
+    border-radius: 13px;
+}
+
+/* Show the first slide by default */
+.slider .slide:first-child {
+    display: block;
+    /* only for the first slide */
+    position: relative; 
+}
+
+.prev, .next {
+    background-color:  rgb(85, 51, 123);
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: rgb(250, 222, 255);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgb(217, 173, 255);
+    color: rgb(48, 0, 103);
+    opacity: 0.4; 
+
+}
+
+
+/* ----Footer------------------------------------------------ */
+
+footer{
+    color: aliceblue;
+    margin-top: 40px;
+    background-color:   rgb(149, 79, 219);
+    text-align: center;
+    padding: 10px;
+    padding-top: 50px;
+    min-height: 30px;
+    text-decoration: none; 
+
+}
+footer a {
+    /* I used this because there were some lines between icons */
+    text-decoration: none;
+    /* To not changing the color */
+    color: inherit;
+    /* Makes the circle for background of the icons */ 
+    /* border-radius: 60%; */
+    /* Allows width and height to be set */
+    display: inline-block;
+    /* Smooth transition for background color */
+    padding: 1px;
+    opacity: 1; 
+    /* background-color: rgb(128, 106, 151); */
+    /* margin on the right and left to have some space between each icons */
+    margin: 0 6px;
+}
+
+footer a img {
+    margin-bottom: 2px;
+    /* Remove space under images: */
+    display: block; 
+    width: auto; 
+    height: 30px;
+    transition: transform 0.3s; 
+    opacity: 1.0; 
+
+}
+
+footer a:hover {
+
+    /* White halo effect */
+    /* background-color:  rgb(215, 173, 251); */
+    /* Changing the space around the icon */
+    /* padding: 1px;  */
+    /*increase the size of the icon */
+    /* transition: transform 0.3s ease-in-out;  */
+    opacity: 0.4; 
+}
+
+/* ----loginForm---------------------------------------------- */
+
+
+#loginForm{
+    background: rgb(250, 207, 246);  
+    border: 2px outset #aaa;
+    border-radius: 10px;
+    padding: 20px; 
+    width: 300px; 
+    margin: auto;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    text-align: center; 
+    box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.2);
+}
+  
+#loginForm label{
+    margin-top: 10px; 
+    display: block;
+    margin-bottom: 5px; 
+}
+  
+#loginForm input[type="text"],
+#loginForm input[type="password"] {
+    width: 100%; 
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #969292; 
+    box-sizing: border-box; 
+}
+#loginForm input[type="text"]:focus,
+#loginForm input[type="password"]:focus {
+  background-color:  rgb(255, 237, 253);
+}
+
+#loginForm button{
+    padding: 10px 20px;
+    background-color: rgb(255, 175, 248); 
+    color: rgb(106, 0, 212) ;
+    border: none; 
+    border-radius: 10px;
+    cursor: pointer; 
+    width: 50%; 
+    margin-top: 10px;
+    
+}
+  
+#loginForm button:hover {
+    background-color: rgb(106, 0, 212);
+    color:  rgb(255, 175, 248);
+
+}
+  
+/* ----resetForm--------------------------------------------- */
+
+
+#resetPasswordForm{
+    background: rgb(250, 207, 246);  
+    border-radius: 10px;
+    border: 2px outset #aaa;
+    padding: 20px; 
+    width: 300px; 
+    margin: 200px auto;
+    text-align: center; 
+    box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.2);
+}
+  
+#resetPasswordForm label{
+    margin-top: 10px; 
+    display: block;
+    margin-bottom: 5px; 
+}
+  
+#resetPasswordForm input[type="email"]{
+    width: 100%; 
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd; 
+    box-sizing: border-box; 
+}
+  
+#resetPasswordForm button{
+    padding: 10px 20px;
+    background-color: rgb(255, 175, 248); 
+    border-radius: 10px;
+    color: rgb(106, 0, 212) ;
+    border: none; 
+    cursor: pointer; 
+    width: 50%; 
+    margin-top: 10px;
+    
+}
+  
+#resetPasswordForm button:hover {
+    background-color: rgb(106, 0, 212);
+    color:  rgb(255, 175, 248);
+
+}
+  
+/* ----Welcome Page-------------------------------------------- */
+
+#WelcomeMessage{
+    /* position: relative; */
+    max-width: 550px; 
+    height: 300px;
+    margin: auto;
+    margin-top: 220px;
+    margin-bottom: 220px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+    border: 12px groove rgb(124, 77, 120); 
+    background-color: rgb(255, 175, 248); 
+    box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.2);
+    animation: bounce 3s infinite;
+    border-radius: 5px;
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+#WelcomeMessage h1{
+
+font-family: Georgia, 'Times New Roman', Times, serif;
+color:rgb(81, 3, 158);
+
+}
+
+#WelcomeMessage p{
+    font-display:unset;
+    margin-top: 10px; 
+    display: block;
+    margin-bottom: 5px;
+    
+}
+
+#p-1{
+    font-size: 17px;
+    line-height: 2 ;
+}
+
+#WelcomeId{
+    font-size: 13 px;
+}
+/* ----PhoneCase gallery-------------------------------------- */
+
+/* #container{
+    margin-top: auto;
+} */
+
+#case-gallery {
+    margin:auto;
+    padding: 80px auto;
+    width: 90%;
+    height: auto;
+    display: flex;
+    /* in order to have different rows i used this, so child elements can wrap onto multiple lines with flex-wrap */
+    flex-wrap: wrap;
+    /*space between flex items */
+    gap: 20px; 
+    justify-content: space-around; 
+    /* Center images vertically in each flex line */
+    align-items: center; 
+}
+  
+.gallery-image {
+    border-radius: 8px;
+    box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.4);
+    /* thi is for around images for spacing from container edges and also the other images */
+    margin:5%;
+    /* i want the height's scale be auto (based on width) */
+    height: auto; 
+    /* calculation / Adjust width of images to be less than half of container width (including margin) */
+    width: calc(40% - 30px);
+}
+
+.gallery-image:hover{
+    box-shadow: 10px 10px 20px 10px rgb(21, 0, 42, 0.7);
+}
+
+.modal {
+    /*  modal will be hidden by default ( sinc i wanted to be displayed only when an image is clicked by users) */
+    display: none; 
+    /* Position of the modal over content: */
+    position: fixed;
+    /* so the pop up is going to stacks on top of all other content and i should usethis */
+    z-index: 1; 
+    /* the pop up modal size: */
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    /* I son't wanna allow scrolling within the modal so i put hidden (for havibg scoll it's auto) so i need max-height: 90vh;  in .modal-content*/
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.568); 
+}
+
+  
+.modal-content {
+
+    background-color: rgb(255, 229, 252);
+    margin: auto;
+    padding: 20px;
+    border: 5px outset rgb(77, 62, 90);
+    width: 80%;
+    max-height: 90vh; 
+    position: relative;
+    transform: translateY(-50%);
+    overflow: auto;
+    box-sizing:border-box;
+     /* it wasn't working without this so this Pushes down by half the view's height */
+    top:50%;
+}
+
+#modal-image{
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px 10px rgba(144, 93, 136, 0.512);
+}
+
+/* #modal-image:hover{
+    box-shadow: 10px 10px 20px 10px rgba(210, 153, 201, 0.512);
+} */
+
+#product-info{
+    padding-top: 160px;
+    font-size: large;
+    float:right;
+    width:45%;
+    /* border: 1px solid rgb(180, 156, 177); */
+    justify-content: space-around;
+ 
+}
+
+
+#product-name{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:rgb(81, 3, 158);
+}
+#product-price{
+   
+    width:45%;
+    color:rgb(56, 0, 111);
+    font-size: 18px; 
+    margin-bottom: 12px; 
+}
+
+#product-size{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:rgb(70, 28, 111);
+}
+.close {
+    /* Set the color of the close button */
+    color: #aaa;
+    /* Float the close button to the right corner */
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#goTop {
+    border: 1px solid rgb(236, 162, 230);
+    background-color:  rgb(229, 183, 225);
+    color:  rgb(106, 0, 212); 
+    /* Top button: fixed at the bottom right corner */
+    position: fixed;
+    cursor: pointer;
+    bottom: 20px; 
+    right: 20px;
+    z-index: 1000; 
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none; 
+}
+
+#goTop:hover {
+    background-color:rgb(95, 26, 163);   
+    color: rgb(255, 175, 248);
+}
+
+/* ----AirpodCase gallery-------------------------------------- */
+
+/* tHe search bar */
+#search-sec{
+    display: flex; 
+    padding: 20px; 
+    width: 500px;
+    margin-left: auto;
+    margin-top: 120px;
+    margin-bottom: 1200px;
+    text-align: center; 
+    
+    justify-content: center;
+    margin: auto;
+}
+#search-sec input[type="text"]{
+width: 200px;
+
+}
+#search-bar{
+    box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgb(150, 94, 206);   
+    justify-content: center;
+    padding: 12px 50px;
+    margin-right: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 300px;
+}
+
+#search-bar:focus{
+    border: 3px solid rgb(237, 39, 255);  
+    background-color:  rgba(162, 126, 199, 0.39); 
+
+}
+  
+#search-btn {
+    box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgb(236, 162, 230);
+    background-color:  rgb(229, 183, 225);
+    color:  rgb(106, 0, 212); 
+    padding: 12px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+#search-btn:hover {
+    background-color:rgb(150, 94, 206);   
+    color: rgb(255, 175, 248);
+}
+#search-btn:active{
+    background-color:rgb(106, 0, 212);   
+    color: rgb(255, 255, 255);
+
+}
+
+/* The gallary's css is the same as previous page but only i don't use the hover over the images */
+#airpod-gallery{
+    margin:auto;
+    padding: 80px auto;
+    width: 90%;
+    height: auto;
+    display: flex;
+    /* in order to have different rows i used this, so child elements can wrap onto multiple lines with flex-wrap */
+    flex-wrap: wrap;
+    /*space between flex items */
+    gap: 20px; 
+    justify-content: space-around; 
+    /* Center images vertically in each flex line */
+    align-items: center; 
+}
+.gallery2-image {
+    border-radius: 8px;
+    box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.4);
+    /* thi is for around images for spacing from container edges and also the other images */
+    margin:5%;
+    /* i want the height's scale be auto (based on width) */
+    height: auto; 
+    /* calculation / Adjust width of images to be less than half of container width (including margin) */
+    width: calc(40% - 30px);
+}
+
+
+/* ----Checkout ---------------------------------------- */
+
+.container{
+    border: 3px outset rgb(236, 162, 230);
+    background-color: rgb(250, 235, 249);
+    box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.2);
+    max-width: 600px; 
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 120px;
+    padding: 23px;
+  
+
+}
+.input-message{
+    color: rgb(62, 1, 123); 
+    font-size: 16px;
+    /* visibility: hidden; */
+}
+
+h2{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#card-information,
+#shipping-information{
+    display: block;
+}
+
+
+#card-information input[type="text"],
+#shipping-information input[type="text"]{
+    display: block;
+}
+
+#title-cart{
+   color: rgb(123, 41, 206) ;
+}
+#cart-items{
+   color: rgb(149, 79, 219) ;
+    border: 4px groove rgb(204, 70, 245);
+    text-align: center;
+    box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.043);
+    margin-bottom: 30px;
+
+}
+
+#submit-form, 
+#clear-form{
+    display: inline-block;
+    padding: 9px ;
+    background-color: rgb(255, 175, 248); 
+    color: rgb(106, 0, 212) ;
+    border: none; 
+    border-radius: 10px;
+    cursor: pointer; 
+    width: 20%; 
+    margin-top: 10px;
+    
+}
+  
+#submit-form:hover {
+    background-color: rgb(106, 0, 212);
+    color:  rgb(255, 175, 248);
+    box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.2);
+
+}
+  
+#clear-form:hover {
+    background-color: rgb(236, 216, 255);
+    color:  rgb(106, 0, 212);
+    box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.2);
+
+}
+#submit-form:active{
+    background-color: rgb(150, 94, 206);  
+}
+
+#clear-form:active{
+    background-color: rgb(150, 94, 206);  
+}
